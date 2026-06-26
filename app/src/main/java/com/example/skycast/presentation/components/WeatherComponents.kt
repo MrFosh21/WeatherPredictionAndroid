@@ -301,7 +301,12 @@ fun WeatherIcon(condition: WeatherCondition, isDay: Boolean, modifier: Modifier 
             .background(Color.White.copy(alpha = 0.16f)),
         contentAlignment = Alignment.Center
     ) {
-        Icon(icon, contentDescription = condition.displayName, tint = Color.White.copy(alpha = pulse), modifier = Modifier.fillMaxSize().padding(18.dp))
+        Icon(
+            imageVector = icon,
+            contentDescription = condition.displayName,
+            tint = Color.White.copy(alpha = pulse),
+            modifier = Modifier.fillMaxSize(0.62f)
+        )
     }
 }
 
